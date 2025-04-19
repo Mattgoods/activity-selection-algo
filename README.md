@@ -42,7 +42,7 @@ This project provides a modular and well-documented C++ implementation of the gr
   - On Windows, use `activity_selection.exe < input.txt`.
 
 ## File Structure
-- `activity_selection.cpp` — Main source code file
+- `src/activity_selection.cpp` — Main source code file
 
 ## License
 This project is provided for educational purposes.
