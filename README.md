@@ -54,6 +54,37 @@ This project provides a modular and well-documented C++ implementation of the gr
   ./activity_selection --random 10000
   ```
 
+## Performance Analysis & Visualization
+
+This project includes scripts to automate performance measurement and visualize results:
+
+### 1. Collecting Performance Data
+
+A shell script is provided to run the algorithm for various input sizes and record running time and peak memory usage.
+
+**To use:**
+```sh
+cd src
+chmod +x collect_performance.sh
+./collect_performance.sh
+```
+This will generate a `performance_results.csv` file with the results.
+
+### 2. Plotting Results
+
+A Python script is provided to plot running time and memory usage versus input size.
+
+**To use:**
+```sh
+pip3 install matplotlib pandas numpy
+python3 plot_performance.py
+```
+This will display and save two plots:
+- `running_time_vs_input_size.png`
+- `peak_memory_vs_input_size.png`
+
+These graphs help you compare empirical performance with theoretical expectations.
+
 ## File Structure
 - `src/activity_selection.cpp` — Main source code file
 
